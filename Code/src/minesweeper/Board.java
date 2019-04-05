@@ -9,7 +9,11 @@ import java.sql.Statement;
 import javafx.util.Pair;
 
 
-
+/** TABLA que contiene las minas 
+*@author Carlos Diaz jimeenz
+*@version 19.5.4 
+*@since 1999
+*/
 public class Board 
 {
     private int numberOfMines;	

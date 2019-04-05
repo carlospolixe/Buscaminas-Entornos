@@ -6,7 +6,11 @@ import java.awt.*;
 import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 
-
+/** clase publica que contiene el UI del juego
+*@author Carlos Diaz jimeenz
+*@version 19.5.4 
+*@since 1999
+*/
 public class UI extends JFrame
 {
     // The buttons
@@ -26,7 +30,7 @@ public class UI extends JFrame
     private boolean stopTimer;
     
     // Frame settings
-    private final String FRAME_TITLE = "Pablo Tamayo";
+    private final String FRAME_TITLE = "CarlosDiaz";
     
     private int FRAME_WIDTH = 520;
     private int FRAME_HEIGHT = 550;

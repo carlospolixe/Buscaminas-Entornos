@@ -23,7 +23,16 @@ import javax.swing.border.TitledBorder;
 import minesweeper.Puntuacion.Time;
 
 
+/** Clase juego que contiene los datos principales con las variables principales
+*@author Carlos Diaz jimeenz
+*@version 19.5.4 
+*@since 1999
+*/
 
+/*
+clase juego  en la que implementa el mentodo contructor con 
+llamando a los diferentes metodos MouseListener, ActionListener, WindowListener
+*/
 // This is the main controller class
 public class Game implements MouseListener, ActionListener, WindowListener
 {
@@ -38,7 +47,10 @@ public class Game implements MouseListener, ActionListener, WindowListener
     private Puntuacion score;
         
     //------------------------------------------------------------------//        
-
+    /*
+    METODO Principal game en la que refercia a las demas clases como board puntuacion
+    al main 
+    */
     public Game()
     {
         // set db path
@@ -77,8 +89,10 @@ public class Game implements MouseListener, ActionListener, WindowListener
         resumeGame();
     }
 
-    //-----------------Load Save Game (if any)--------------------------//
-    
+    //-----------------cARGAR Y GUARDAR JUEGO--------------------------//
+    /*
+    METODO  de juego pausado y juego guardado en la que guardamos los datos del juego
+    */
     public void resumeGame()
     {
         if(board.checkSave())
@@ -122,6 +136,10 @@ public class Game implements MouseListener, ActionListener, WindowListener
 
 
     //-------------------------------------------------//
+    /*
+    METODO en el que llamamos a la clase que contiene las imagenes de cada 
+    una de las celdas del juego
+    */
     public void setButtonImages()
     {
         Casilla cells[][] = board.getCells();
@@ -158,7 +176,10 @@ public class Game implements MouseListener, ActionListener, WindowListener
     
     
     //------------------------------------------------------------//
-        
+    /*
+    Metodo publico en que llamamops a la clase  tabla para crear los datos de 
+    tablas conforme a los datos de la clase board
+    */
     public void createBoard()
     {
         // Create a new board        
@@ -184,7 +205,10 @@ public class Game implements MouseListener, ActionListener, WindowListener
         gui.setMines(board.getNumberOfMines());
     }
     //------------------------------------------------------------------------------//
-    
+    /*
+    Metodo publico en que restablecemos el juego mediante las variables de fin
+    de juego
+    */
     public void restartGame()
     {
         this.playing = false;

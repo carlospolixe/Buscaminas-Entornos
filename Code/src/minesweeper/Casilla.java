@@ -1,14 +1,16 @@
 package minesweeper;
 
 
-
+/** clase publica que contiene las casillas de cada una de las minas del juego
+*@author Carlos Diaz jimeenz
+*@version 19.5.4 
+*@since 1999
+*/
 public class Casilla 
 {
     private boolean mine;
 
-    /*
-     *  perrito chico
-     */
+    
        
     //Only the content of the Cell is visible to the player.
     private String content;
@@ -28,7 +30,7 @@ public class Casilla
 
 
     
-    //-------------paco ven pa' ca----------------------------//
+    //-------------venid con la cara destapada----------------------------//
     public boolean cogeMina()
     {
         return mine;

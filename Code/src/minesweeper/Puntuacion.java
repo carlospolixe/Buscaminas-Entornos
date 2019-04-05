@@ -13,6 +13,13 @@ import java.util.Collections;
 import java.util.Comparator;
 
 
+/** clase que contiene la puntuacion del juego
+*@author Carlos Diaz jimeenz
+*@version 19.5.4
+*@since 1999
+*/
+
+
 public class Puntuacion
 {
     ArrayList<Time> bestTimes;
